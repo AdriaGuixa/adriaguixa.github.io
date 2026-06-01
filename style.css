@@ -331,9 +331,9 @@
     font-size: clamp(1.8rem, 3vw, 2.4rem); color: var(--dark); margin-bottom: 16px; line-height: 1.2;
   }
   .team-content p { color: var(--muted); line-height: 1.7; margin-bottom: 28px; }
-  .team-avatars { display: grid; grid-template-columns: repeat(3, max-content); gap: 32px; justify-content: center; }
+  .team-avatars { display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; max-width: 100%; margin: 0 auto; }
   .avatar {
-    width: 130px; height: 130px; border-radius: 50%;
+    width: 115px; height: 115px; border-radius: 50%;
     border: 2px solid white; overflow: hidden;
     background: white;
     padding: 2px;
