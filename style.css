@@ -53,9 +53,9 @@
   }
   .logo-line2 {
     font-family: 'DM Sans', sans-serif;
-    font-size: 0.68rem;
-    font-weight: 400;
-    color: var(--teal);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--dark);
     line-height: 1.2;
   }
   .logo-icon {
