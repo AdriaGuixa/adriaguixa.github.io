@@ -315,20 +315,26 @@
   }
   .step h4 { color: white; font-size: 1rem; font-weight: 600; margin-bottom: 6px; }
   .step p { color: rgba(255,255,255,0.55); font-size: 0.86rem; line-height: 1.5; }
+  /* COLLABORATIONS */
+  .collaborations { padding: 90px 7%; background: var(--dark); color: white; position: relative; overflow: hidden; }
+  .collaborations .section-header h2 { color: white; }
+  .collaborations .section-label { color: var(--teal-light); }
+  .collaborations-text { max-width: 800px; margin: 0 auto; text-align: center; position: relative; z-index: 2; }
+  .collaborations-text p { color: rgba(255,255,255,0.65); font-size: 1.05rem; line-height: 1.7; }
 
   /* TEAM */
-  .team { padding: 90px 7%; background: var(--dark); }
-  .team .section-label { color: var(--teal-light); }
+  .team { padding: 90px 7%; background: white; }
+  .team .section-label { color: var(--teal); }
   .team-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
   .team-content h2 {
     font-family: 'DM Serif Display', serif;
-    font-size: clamp(1.8rem, 3vw, 2.4rem); color: white; margin-bottom: 16px; line-height: 1.2;
+    font-size: clamp(1.8rem, 3vw, 2.4rem); color: var(--dark); margin-bottom: 16px; line-height: 1.2;
   }
-  .team-content p { color: rgba(255,255,255,0.65); line-height: 1.7; margin-bottom: 28px; }
+  .team-content p { color: var(--muted); line-height: 1.7; margin-bottom: 28px; }
   .team-avatars { display: grid; grid-template-columns: repeat(3, max-content); gap: 32px; justify-content: center; }
   .avatar {
     width: 130px; height: 130px; border-radius: 50%;
-    border: 3px solid var(--dark); overflow: hidden;
+    border: 3px solid white; overflow: hidden;
     background: white;
     padding: 6px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -347,14 +353,14 @@
     width: 100%; height: 100%; object-fit: cover; object-position: center 25%; border-radius: 50%;
   }
   .cta-box {
-    background: white; border-radius: var(--radius);
-    padding: 44px; color: var(--dark);
+    background: var(--dark); border-radius: var(--radius);
+    padding: 44px; color: white;
   }
   .cta-box h3 {
     font-family: 'DM Serif Display', serif;
-    font-size: 1.9rem; margin-bottom: 12px; line-height: 1.2;
+    font-size: 1.9rem; margin-bottom: 12px; line-height: 1.2; color: white;
   }
-  .cta-box p { color: var(--muted); margin-bottom: 28px; line-height: 1.6; }
+  .cta-box p { color: rgba(255,255,255,0.65); margin-bottom: 28px; line-height: 1.6; }
   .cta-btns { display: flex; gap: 12px; flex-wrap: wrap; }
   .btn-white {
     background: white; color: var(--dark);
