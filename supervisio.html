@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supervisió – Bmind</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .service-hero-img {
+      width: 100%;
+      height: 450px;
+      object-fit: cover;
+      border-radius: var(--radius);
+      margin-bottom: 3rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    }
+    .service-detail {
+      max-width: 800px;
+      margin: 120px auto 80px;
+      padding: 0 20px;
+    }
+    .service-detail h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 2.5rem;
+      color: var(--dark);
+      margin-bottom: 1.5rem;
+      text-align: center;
+      line-height: 1.3;
+    }
+    .service-detail p {
+      font-size: 1.05rem;
+      color: var(--text);
+      line-height: 1.7;
+      margin-bottom: 1.2rem;
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 16px;
+      margin-top: 1.5rem;
+      margin-bottom: 2.5rem;
+      padding: 0;
+      list-style: none;
+    }
+    .features-grid li {
+      background: #ffffff;
+      border: 1px solid var(--cream);
+      padding: 16px 20px;
+      border-radius: var(--radius-sm);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+      font-size: 0.95rem;
+      color: var(--dark);
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 0;
+      transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+    }
+    .features-grid li:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+      border-color: var(--teal-light);
+    }
+    .features-grid li::before {
+      content: '✓';
+      color: var(--teal);
+      font-weight: bold;
+      margin-right: 12px;
+      font-size: 1.1rem;
+      line-height: 1.2;
+    }
+
+    @media (max-width: 768px) {
+      .service-hero-img { height: 250px; }
+      .service-detail h1 { font-size: 2rem; }
+      .features-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="index.html" class="logo">
+      <img src="images/bmind-logo.png" alt="Bmind" style="height: 60px; width: auto;">
+      <div class="logo-text">
+        <span class="logo-line1">CENTRE DE DIAGNÒSTIC I ATENCIÓ</span>
+        <span class="logo-line2">PSICOLÒGICA I PSIQUIÀTRICA</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Inici</a></li>
+      <li><a href="index.html#services" class="active">Serveis</a></li>
+      <li><a href="index.html#collaborations">Col·laboracions</a></li>
+      <li><a href="equip.html">Equip</a></li>
+      <li><a href="index.html#contact">Contacte</a></li>
+    </ul>
+    <a href="index.html#contact" class="nav-cta">Demana visita →</a>
+  </nav>
+
+  <section class="service-detail fade-up">
+    
+    <img src="images/Bmind_121.jpg" alt="Supervisió de casos per a professionals" class="service-hero-img">
+
+    <h1>Supervisió de casos per a professionals (online i presencial)</h1>
+
+    <p>Oferim un servei de supervisió i assessorament adreçat a professionals de l’àmbit educatiu, psicopedagògic, psicològic i social que desitgin disposar d’un espai de reflexió i orientació sobre la seva pràctica professional.</p>
+    
+    <p>La supervisió permet analitzar casos des d’una mirada externa i especialitzada, afavorint una millor comprensió de les dificultats i la definició d’estratègia d’intervenció ajustades a cada situació.</p>
+
+    <p style="margin-top: 2.5rem; font-weight: 500; color: var(--dark);">Aquest servei pot ser d’utilitat davant de:</p>
+    
+    <ul class="features-grid">
+      <li>Casos complexos o amb evolució estancada</li>
+      <li>Dificultats d’aprenentatge i trastorns del neurodesenvolupament</li>
+      <li>Situacions relacionades amb el TDAH, dislèxia o altres trastorns específics de l’aprenentatge</li>
+      <li>Dificultats emocionals o conductuals que interfereixen en el procés educatiu</li>
+      <li>Orientació en la planificació d’intervencions i adaptacions</li>
+      <li>Coordinació entre diferents agents implicats en el cas</li>
+    </ul>
+
+    <p style="margin-top: 2rem;">Les sessions de supervisió ofereixen un espai de confiança, anàlisi i intercanvi professional, amb l’objectiu d’enriquir la pràctica clínica i educativa, afavorir la presa de decisions i garantir una atenció de qualitat a les persones ateses.</p>
+
+  </section>
+
+  <footer>
+    <div class="footer-logo">
+      <img src="images/bmind-logo.png" alt="Bmind" style="height: 60px; width: auto;">
+    </div>
+    <ul class="footer-nav">
+      <li><a href="index.html">Inici</a></li>
+      <li><a href="index.html#services">Serveis</a></li>
+      <li><a href="index.html#collaborations">Col·laboracions</a></li>
+      <li><a href="equip.html">Equip</a></li>
+      <li><a href="index.html#contact">Contacte</a></li>
+    </ul>
+    <ul class="footer-links">
+      <li><a href="avis-legal.html">Avís legal</a></li>
+      <li><a href="politica-de-privacitat.html">Política de privacitat</a></li>
+      <li><a href="#">Política de cookies</a></li>
+    </ul>
+    <span class="footer-copy">© 2024 Bmind · Tots els drets reservats</span>
+  </footer>
+
+  <script>
+    // Intersection Observer per animacions de fade-up
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+    
+    // Mostrem directament per evitar que quedi blanc si el scroll no l'activa
+    setTimeout(() => {
+        document.querySelectorAll('.fade-up').forEach(el => {
+            if (el.getBoundingClientRect().top < window.innerHeight) {
+                el.classList.add('visible');
+            }
+        });
+    }, 100);
+  </script>
+</body>
+</html>
