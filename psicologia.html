@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Psicologia – Bmind</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .service-hero-img {
+      width: 100%;
+      height: 450px;
+      object-fit: cover;
+      border-radius: var(--radius);
+      margin-bottom: 3rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    }
+    .service-detail {
+      max-width: 800px;
+      margin: 120px auto 80px;
+      padding: 0 20px;
+    }
+    .service-detail h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 2.5rem;
+      color: var(--dark);
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .service-detail h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.8rem;
+      color: var(--teal);
+      margin-top: 3.5rem;
+      margin-bottom: 1.2rem;
+      scroll-margin-top: 120px;
+      border-bottom: 2px solid var(--cream);
+      padding-bottom: 0.5rem;
+    }
+    .service-detail p {
+      font-size: 1.05rem;
+      color: var(--text);
+      line-height: 1.7;
+      margin-bottom: 1.2rem;
+    }
+    
+    /* Contingut Imatges Seccions */
+    .content-image {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      border-radius: var(--radius-sm);
+      margin: 1.5rem 0 2.5rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+
+    /* Índex de Continguts */
+    .service-index {
+      background: var(--cream);
+      padding: 2.5rem;
+      border-radius: var(--radius);
+      margin-bottom: 3rem;
+      border-left: 4px solid var(--teal);
+    }
+    .service-index h3 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.4rem;
+      color: var(--dark);
+      margin-bottom: 1.5rem;
+    }
+    .service-index ul {
+      margin-bottom: 0;
+      list-style-type: none;
+      margin-left: 0;
+    }
+    .service-index li {
+      font-weight: 500;
+      padding-left: 1.8rem;
+      position: relative;
+      margin-bottom: 1rem;
+    }
+    .service-index li::before {
+      content: '→';
+      color: var(--teal);
+      position: absolute;
+      left: 0;
+      font-size: 1.2rem;
+      line-height: 1;
+      top: 2px;
+    }
+    .service-index li a {
+      text-decoration: none;
+      color: var(--dark);
+      transition: color 0.2s, padding-left 0.2s;
+      display: inline-block;
+    }
+    .service-index li a:hover {
+      color: var(--teal);
+      padding-left: 4px;
+    }
+
+    /* Llistes Estil Quadrícula (Caixes/Columnes) */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 16px;
+      margin-top: 1.5rem;
+      margin-bottom: 2.5rem;
+      padding: 0;
+      list-style: none;
+    }
+    .features-grid li {
+      background: #ffffff;
+      border: 1px solid var(--cream);
+      padding: 16px 20px;
+      border-radius: var(--radius-sm);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+      font-size: 0.95rem;
+      color: var(--dark);
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 0;
+      transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+    }
+    .features-grid li:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+      border-color: var(--teal-light);
+    }
+    .features-grid li::before {
+      content: '✓';
+      color: var(--teal);
+      font-weight: bold;
+      margin-right: 12px;
+      font-size: 1.1rem;
+      line-height: 1.2;
+    }
+
+    @media (max-width: 768px) {
+      .service-hero-img { height: 250px; }
+      .content-image { height: 250px; }
+      .service-detail h1 { font-size: 2rem; }
+      .service-detail h2 { font-size: 1.5rem; }
+      .features-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="index.html" class="logo">
+      <img src="images/bmind-logo.png" alt="Bmind" style="height: 60px; width: auto;">
+      <div class="logo-text">
+        <span class="logo-line1">CENTRE DE DIAGNÒSTIC I ATENCIÓ</span>
+        <span class="logo-line2">PSICOLÒGICA I PSIQUIÀTRICA</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Inici</a></li>
+      <li><a href="index.html#services" class="active">Serveis</a></li>
+      <li><a href="index.html#collaborations">Col·laboracions</a></li>
+      <li><a href="equip.html">Equip</a></li>
+      <li><a href="index.html#contact">Contacte</a></li>
+    </ul>
+    <a href="index.html#contact" class="nav-cta">Demana visita →</a>
+  </nav>
+
+  <section class="service-detail fade-up">
+    
+    <img src="images/Bmind_141.jpg" alt="Psicologia Bmind" class="service-hero-img">
+
+    <h1>PSICOLOGIA: “Cuidar la ment, també és cuidar la vida”</h1>
+    
+    <div class="service-index">
+      <h3>Índex de continguts</h3>
+      <ul>
+        <li><a href="#infantil">PSICOLOGIA INFANTIL</a></li>
+        <li><a href="#adolescent">PSICOLOGIA DE L’ADOLESCENT</a></li>
+        <li><a href="#essencia">ESSÈNCIA “TORNAR A TU”</a></li>
+        <li><a href="#familiar">TERÀPIA FAMILIAR</a></li>
+        <li><a href="#crianca">ASSESSORAMENT EN CRIANÇA CONSCIENT</a></li>
+      </ul>
+    </div>
+
+    <p>En el servei de psicologia del nostre centre treballem des d’una mirada integradora, humana i respectuosa, posant al centre la persona, la seva història i les seves necessitats emocionals. Entenem la salut emocional com un procés viu i únic, i per això oferim un acompanyament personalitzat tant a infants, adolescents com a famílies.</p>
+
+    <h2 id="infantil">PSICOLOGIA INFANTIL</h2>
+    <img src="images/Bmind_080.jpg" alt="Psicologia Infantil" class="content-image fade-up">
+    <p>L’etapa infantil és clau en el desenvolupament emocional, social i cognitiu. A través del joc, l’expressió emocional i eines adaptades a cada edat, ajudem els infants a comprendre què els passa i a desenvolupar recursos per gestionar les seves emocions i dificultats.</p>
+    <p>Treballem aspectes com:</p>
+    <ul class="features-grid">
+      <li>Dificultats emocionals i conductuals</li>
+      <li>Ansietat infantil</li>
+      <li>Pors i inseguretats</li>
+      <li>Baixa autoestima</li>
+      <li>Dificultats d’aprenentatge i adaptació escolar</li>
+      <li>Problemes de regulació emocional</li>
+      <li>Problemes d’enuresis, encopresis</li>
+      <li>Neurodivergències: Altes capacitats, alta sensibilitat, (T)DAH,...</li>
+      <li>Trastorns de conducta</li>
+      <li>Dificultats en les relacions socials</li>
+      <li>Processos de separació familiar o dol</li>
+      <li>Processos de familiarització</li>
+    </ul>
+    <p>El treball amb les famílies és essencial, ja que entenem l’infant dins del seu entorn afectiu i relacional així que les intervencions entre infants i adults es porten des d’un procés paral·lel.</p>
+
+    <h2 id="adolescent">PSICOLOGIA DE L’ADOLESCENT</h2>
+    <img src="images/Bmind_025.jpg" alt="Psicologia Adolescent" class="content-image fade-up">
+    <p>L’adolescència és una etapa de transformació intensa, on sovint apareixen conflictes interns, inseguretats i dificultats emocionals. Oferim un espai segur i de confiança perquè els adolescents puguin expressar-se lliurement, entendre el que senten i construir una identitat sana i coherent.</p>
+    <p>Acompanyem adolescents en situacions de:</p>
+    <ul class="features-grid">
+      <li>Ansietat i estrès</li>
+      <li>Tristesa i simptomatologia depressiva</li>
+      <li>Baixa autoestima i inseguretat</li>
+      <li>Dificultats relacionals i familiars</li>
+      <li>Gestió emocional</li>
+      <li>Trastorns de conducta alimentària</li>
+      <li>Addiccions a pantalles o conductes compulsives</li>
+      <li>Autolesions</li>
+      <li>Dificultats escolars o de motivació</li>
+      <li>Processos de dol o canvis vitals</li>
+    </ul>
+    <p>Treballem des de l’escolta activa, el respecte i la vinculació terapèutica, adaptant cada procés a les necessitats individuals.</p>
+
+    <h2 id="essencia">ESSÈNCIA “TORNAR A TU”</h2>
+    <img src="images/Bmind_121.jpg" alt="Essència Tornar a tu" class="content-image fade-up">
+    <p>El projecte Essència neix amb la voluntat d’acompanyar les persones i les famílies a reconnectar amb els seus orígens per comprendre millor les seves reaccions automàtiques, patrons emocionals i maneres de relacionar-se.</p>
+    <p>Moltes de les dificultats actuals tenen arrels en experiències viscudes, dinàmiques familiars apreses o ferides emocionals no resoltes. A través d’aquest projecte, proposem un treball profund d’autoconeixement i consciència emocional per identificar aquests patrons i transformarlos des d’una mirada més saludable i compassiva.</p>
+    <p>Essència és un retorn conscient a allò que som, per entendre d’on venim i poder escollir com volem viure i relacionar-nos.</p>
+    <p>Acompanyem processos relacionats amb:</p>
+    <ul class="features-grid">
+      <li>Situacions d’ansietat o estrès familiar</li>
+      <li>Depressió</li>
+      <li>Estrès</li>
+      <li>Trauma emocional</li>
+      <li>Bloquejos emocionals</li>
+      <li>Processos de Dol</li>
+      <li>Baixa autoestima</li>
+      <li>Dificultats relacionals</li>
+      <li>Trastorns de conducta</li>
+      <li>Regulació emocional</li>
+      <li>Dependència emocional</li>
+      <li>Trastorns alimentaris</li>
+      <li>Processos vitals i de creixement personal</li>
+    </ul>
+    <p>Ajudem als progenitors a:</p>
+    <ul class="features-grid">
+      <li>Comprendre l’origen dels conflictes familiars</li>
+      <li>Identificar patrons repetitius heretats</li>
+      <li>Millorar la comunicació i l’escolta</li>
+      <li>Reforçar els vincles afectius</li>
+      <li>Gestionar emocions de manera saludable</li>
+      <li>Establir límits conscients i respectuosos</li>
+      <li>Comprendre les necessitats emocionals dels infants i adolescents</li>
+      <li>Sanar ferides emocionals individuals i familiars</li>
+      <li>Construir relacions més sanes, equilibrades i conscients</li>
+    </ul>
+
+    <h2 id="familiar">TERÀPIA FAMILIAR</h2>
+    <img src="images/sofa.jpeg" alt="Teràpia Familiar" class="content-image fade-up">
+    <p>És un espai d’acompanyament emocional destinat a comprendre les dinàmiques que es generen dins el sistema família i que, sovint, provoquen malestar, conflictes o dificultats en la convivència. Des del nostre centre entenem la família com un sistema viu, on el que afecta a un membre repercuteix, d’una manera o altra, en la resta. No treballem des de la culpa, ni el judici, sinó des de la comprensió, l’escolta i la consciència. L’objectiu és ajudar cada membre de la família a entendre què està passant, com es relaciona amb els altres i quins patrons emocionals o conductuals es repeteixen dins la dinàmica familiar.</p>
+    <p>Oferim un espai on:</p>
+    <ul class="features-grid">
+      <li>Millorar la comunicació</li>
+      <li>Comprendre els conflictes familiars</li>
+      <li>Reforçar els vincles afectius</li>
+      <li>Gestionar moments de canvi o crisi</li>
+      <li>Treballar els límits i els rols familiars</li>
+      <li>Sanar dinàmiques repetitives i patrons heretats</li>
+      <li>Processos de separació o reconstrucció familiar</li>
+    </ul>
+
+    <h2 id="crianca">ASSESSORAMENT EN CRIANÇA CONSCIENT</h2>
+    <img src="images/Bmind_034.jpg" alt="Assessorament en criança conscient" class="content-image fade-up">
+    <p>Acompanyem mares, pares i famílies en el procés de criança des d’una mirada respectuosa i conscient. Entenem que educar també implica revisar-nos com a adults, entendre les necessitats emocionals dels infants i construir vincles segurs.</p>
+    <p>Oferim orientació en:</p>
+    <ul class="features-grid">
+      <li>Gestió de límits i normes</li>
+      <li>Explosió i regulació emocional</li>
+      <li>Vinculació afectiva</li>
+      <li>Criança honesta</li>
+      <li>Dificultats en les rutines</li>
+      <li>Arribada de germans/-es</li>
+      <li>Gelosia entre germans/-es</li>
+      <li>Acompanyament emocional en diferents etapes evolutives</li>
+      <li>Comunicació familiar</li>
+      <li>Autocura parental</li>
+    </ul>
+    <p>L’objectiu és oferir eines pràctiques i emocionals perquè les famílies puguin viure la criança amb més consciència, calma i connexió.</p>
+  </section>
+
+  <footer>
+    <div class="footer-logo">
+      <img src="images/bmind-logo.png" alt="Bmind" style="height: 60px; width: auto;">
+    </div>
+    <ul class="footer-nav">
+      <li><a href="index.html">Inici</a></li>
+      <li><a href="index.html#services">Serveis</a></li>
+      <li><a href="index.html#collaborations">Col·laboracions</a></li>
+      <li><a href="equip.html">Equip</a></li>
+      <li><a href="index.html#contact">Contacte</a></li>
+    </ul>
+    <ul class="footer-links">
+      <li><a href="avis-legal.html">Avís legal</a></li>
+      <li><a href="politica-de-privacitat.html">Política de privacitat</a></li>
+      <li><a href="#">Política de cookies</a></li>
+    </ul>
+    <span class="footer-copy">© 2024 Bmind · Tots els drets reservats</span>
+  </footer>
+
+  <script>
+    // Intersection Observer per animacions de fade-up
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+    
+    // Mostrem directament per evitar que quedi blanc si el scroll no l'activa
+    setTimeout(() => {
+        document.querySelectorAll('.fade-up').forEach(el => {
+            if (el.getBoundingClientRect().top < window.innerHeight) {
+                el.classList.add('visible');
+            }
+        });
+    }, 100);
+  </script>
+</body>
+</html>
