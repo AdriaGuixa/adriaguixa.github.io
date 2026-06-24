@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedagogia – Bmind</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .service-hero-img {
+      width: 100%;
+      height: 450px;
+      object-fit: cover;
+      border-radius: var(--radius);
+      margin-bottom: 3rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    }
+    .service-detail {
+      max-width: 800px;
+      margin: 120px auto 80px;
+      padding: 0 20px;
+    }
+    .service-detail h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 2.5rem;
+      color: var(--dark);
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .service-subtitle {
+      text-align: center;
+      font-size: 1.2rem;
+      margin-bottom: 2.5rem;
+      color: var(--teal);
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+    .service-detail h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.8rem;
+      color: var(--teal);
+      margin-top: 3.5rem;
+      margin-bottom: 1.2rem;
+      scroll-margin-top: 120px;
+      border-bottom: 2px solid var(--cream);
+      padding-bottom: 0.5rem;
+    }
+    .service-detail p {
+      font-size: 1.05rem;
+      color: var(--text);
+      line-height: 1.7;
+      margin-bottom: 1.2rem;
+    }
+    
+    /* Contingut Imatges Seccions */
+    .content-image {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      border-radius: var(--radius-sm);
+      margin: 1.5rem 0 2.5rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+
+    /* Índex de Continguts */
+    .service-index {
+      background: var(--cream);
+      padding: 2.5rem;
+      border-radius: var(--radius);
+      margin-bottom: 3rem;
+      border-left: 4px solid var(--teal);
+    }
+    .service-index h3 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.4rem;
+      color: var(--dark);
+      margin-bottom: 1.5rem;
+    }
+    .service-index ul {
+      margin-bottom: 0;
+      list-style-type: none;
+      margin-left: 0;
+    }
+    .service-index li {
+      font-weight: 500;
+      padding-left: 1.8rem;
+      position: relative;
+      margin-bottom: 1rem;
+    }
+    .service-index li::before {
+      content: '→';
+      color: var(--teal);
+      position: absolute;
+      left: 0;
+      font-size: 1.2rem;
+      line-height: 1;
+      top: 2px;
+    }
+    .service-index li a {
+      text-decoration: none;
+      color: var(--dark);
+      transition: color 0.2s, padding-left 0.2s;
+      display: inline-block;
+    }
+    .service-index li a:hover {
+      color: var(--teal);
+      padding-left: 4px;
+    }
+
+    /* Llistes Estil Quadrícula (Caixes/Columnes) */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 16px;
+      margin-top: 1.5rem;
+      margin-bottom: 2.5rem;
+      padding: 0;
+      list-style: none;
+    }
+    .features-grid li {
+      background: #ffffff;
+      border: 1px solid var(--cream);
+      padding: 16px 20px;
+      border-radius: var(--radius-sm);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+      font-size: 0.95rem;
+      color: var(--dark);
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 0;
+      transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+    }
+    .features-grid li:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+      border-color: var(--teal-light);
+    }
+    .features-grid li::before {
+      content: '✓';
+      color: var(--teal);
+      font-weight: bold;
+      margin-right: 12px;
+      font-size: 1.1rem;
+      line-height: 1.2;
+    }
+
+    @media (max-width: 768px) {
+      .service-hero-img { height: 250px; }
+      .content-image { height: 250px; }
+      .service-detail h1 { font-size: 2rem; }
+      .service-subtitle { font-size: 1.1rem; }
+      .service-detail h2 { font-size: 1.5rem; }
+      .features-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="index.html" class="logo">
+      <img src="images/bmind-logo.png" alt="Bmind" style="height: 60px; width: auto;">
+      <div class="logo-text">
+        <span class="logo-line1">CENTRE DE DIAGNÒSTIC I ATENCIÓ</span>
+        <span class="logo-line2">PSICOLÒGICA I PSIQUIÀTRICA</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Inici</a></li>
+      <li><a href="index.html#services" class="active">Serveis</a></li>
+      <li><a href="index.html#collaborations">Col·laboracions</a></li>
+      <li><a href="equip.html">Equip</a></li>
+      <li><a href="index.html#contact">Contacte</a></li>
+    </ul>
+    <a href="index.html#contact" class="nav-cta">Demana visita →</a>
+  </nav>
+
+  <section class="service-detail fade-up">
+    
+    <img src="images/Bmind_080.jpg" alt="Pedagogia Bmind" class="service-hero-img">
+
+    <h1>SERVEI DE PEDAGOGIA: “Aprendre amb confiança”</h1>
+    <p class="service-subtitle">“Suport pedagògic per créixer, aprendre i avançar”</p>
+    
+    <div class="service-index">
+      <h3>Índex de continguts</h3>
+      <ul>
+        <li><a href="#suport-escolar">SUPORT ESCOLAR A SECUNDÀRIA</a></li>
+        <li><a href="#reeducacions">REEDUCACIONS PEDAGÒGIQUES</a></li>
+      </ul>
+    </div>
+
+    <p>Al nostre centre oferim un servei d’acompanyament pedagògic personalitzat, adaptat a les necessitats de cada infant i adolescent. El nostre objectiu és potenciar les seves capacitats, afavorir l’autonomia en l’aprenentatge i proporcionar les eines necessàries per assolir un desenvolupament acadèmic i personal satisfactori.</p>
+
+    <h2 id="suport-escolar">SUPORT ESCOLAR A SECUNDÀRIA</h2>
+    <img src="images/Bmind_028.jpg" alt="Suport Escolar a Secundària" class="content-image fade-up">
+    <p>El nostre objectiu no només és millorar notes, sinó la manera com es veuen a si mateixos. L’èxit acadèmic comença en la confiança personal.</p>
+    <p>Acompanyem els alumnes d’ESO en el seu procés d’aprenentatge, ajudant-los adquirir hàbits d’estudi eficaços, tècniques d’organització i estratègies per millorar el rendiment acadèmic.</p>
+    <p>Treballem aspectes com:</p>
+    <ul class="features-grid">
+      <li>Organització i planificació de les tasques escolar</li>
+      <li>Tècniques d’estudi i expressió escrita</li>
+      <li>Gestió del Temps i autonomia personal</li>
+      <li>Motivació i confiança davant els aprenentatges</li>
+      <li>Estratègies per afrontar les dificultats acadèmiques</li>
+      <li>Seguiment i coordinació amb la família i el centre educatiu, quan és necessari</li>
+    </ul>
+    <p>L’acompanyament es realitza en petits grups, respectant el ritme i les característiques de cada alumne.</p>
+
+    <h2 id="reeducacions">REEDUCACIONS PEDAGÒGIQUES</h2>
+    <img src="images/Bmind_031.jpg" alt="Reeducacions Pedagògiques" class="content-image fade-up">
+    <p><strong>ACOMPANYEM PERSONES, NO NOMÉS DIFICULTATS.</strong><br>
+    <em>“Perquè aprendre no hauria d’anar lligat a l’angoixa ni a la inseguretat”.</em></p>
+    <p>Les reeducacions pedagògiques estan dirigides a infants i adolescents que presenten dificultats en els processos d’aprenentatge o necessiten un suport específic per desenvolupar les seves competències acadèmiques.</p>
+    <p>Intervenim en casos de:</p>
+    <ul class="features-grid">
+      <li>Trastorns específics de l’aprenentatge (dislèxia, disgrafia, discalcúlia, entre d’altres)</li>
+      <li>Dificultats de lectoescriptura</li>
+      <li>Dificultats de raonament matemàtic</li>
+      <li>Trastorn per Dèficit d’atenció amb o sense Hiperactivitat</li>
+      <li>Dificultats d’atenció, concentració i funcions executives</li>
+      <li>Problemes d’organització i planificació</li>
+      <li>Baixa autoestima acadèmica i desmotivació escolar</li>
+    </ul>
+    <p>A través d’una intervenció individual o grupal treballem les habilitats cognitives i acadèmiques necessàries per afavorir un aprenentatge més eficient i funcional. Utilitzem metodologies adaptades a cada cas, potenciant els punts forts de l’infant i adolescent i proporcionant estratègies pràctiques que puguin aplicar tant a l’escola com en el seu dia a dia.</p>
+    <p>Entenem la intervenció pedagògica com un treball compartit entre l’alumne, la família, l’escola i els professionals que l’acompanyen. Per aquest motiu, fomentem la coordinació entre tots els agents implicats per garantir una intervenció coherent i ajustada a les necessitats de cada persona.</p>
+    <p>El nostre objectiu és ajudar cada alumne a desenvolupar el seu potencial, guanyar seguretat en les seves capacitats i viure l’aprenentatge amb més confiança i benestar.</p>
+
+  </section>
+
+  <footer>
+    <div class="footer-logo">
+      <img src="images/bmind-logo.png" alt="Bmind" style="height: 60px; width: auto;">
+    </div>
+    <ul class="footer-nav">
+      <li><a href="index.html">Inici</a></li>
+      <li><a href="index.html#services">Serveis</a></li>
+      <li><a href="index.html#collaborations">Col·laboracions</a></li>
+      <li><a href="equip.html">Equip</a></li>
+      <li><a href="index.html#contact">Contacte</a></li>
+    </ul>
+    <ul class="footer-links">
+      <li><a href="avis-legal.html">Avís legal</a></li>
+      <li><a href="politica-de-privacitat.html">Política de privacitat</a></li>
+      <li><a href="#">Política de cookies</a></li>
+    </ul>
+    <span class="footer-copy">© 2024 Bmind · Tots els drets reservats</span>
+  </footer>
+
+  <script>
+    // Intersection Observer per animacions de fade-up
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+    
+    // Mostrem directament per evitar que quedi blanc si el scroll no l'activa
+    setTimeout(() => {
+        document.querySelectorAll('.fade-up').forEach(el => {
+            if (el.getBoundingClientRect().top < window.innerHeight) {
+                el.classList.add('visible');
+            }
+        });
+    }, 100);
+  </script>
+</body>
+</html>
