@@ -254,6 +254,32 @@
     font-size: 1.35rem; color: var(--dark); margin-bottom: 12px;
   }
   .service-card-body p { font-size: 0.88rem; color: var(--muted); margin-bottom: 18px; line-height: 1.6; }
+  .card-description {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 16px;
+    transition: all 0.3s ease;
+  }
+  .card-description.expanded {
+    display: block;
+    -webkit-line-clamp: unset;
+  }
+  .card-description p:last-child {
+    margin-bottom: 0;
+  }
+  .saber-mes {
+    color: var(--teal);
+    font-weight: 600;
+    font-size: 0.88rem;
+    cursor: pointer;
+    margin-top: auto;
+    align-self: flex-start;
+  }
+  .saber-mes:hover {
+    text-decoration: underline;
+  }
   .service-list { list-style: none; margin-bottom: 24px; }
   .service-list li {
     font-size: 0.84rem; color: var(--text); padding: 5px 0;
