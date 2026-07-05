@@ -183,15 +183,24 @@
   </footer>
 
   <script>
-    function toggleCard(btn) {
-      const desc = btn.previousElementSibling;
-      if (desc.classList.contains('expanded')) {
-        desc.classList.remove('expanded');
-        btn.textContent = 'Llegir més';
-      } else {
-        desc.classList.add('expanded');
-        btn.textContent = 'Llegir menys';
-      }
+    function toggleCard(clickedBtn) {
+      const isExpanding = clickedBtn.textContent === 'Llegir més';
+      const allDescs = document.querySelectorAll('.card-description');
+      const allBtns = document.querySelectorAll('.saber-mes');
+      
+      allDescs.forEach(desc => {
+        if (isExpanding) {
+          desc.classList.add('expanded');
+        } else {
+          desc.classList.remove('expanded');
+        }
+      });
+      
+      allBtns.forEach(btn => {
+        if (btn.style.display !== 'none') {
+          btn.textContent = isExpanding ? 'Llegir menys' : 'Llegir més';
+        }
+      });
     }
   </script>
 </body>
