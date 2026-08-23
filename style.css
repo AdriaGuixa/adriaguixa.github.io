@@ -444,7 +444,7 @@
   .team-avatars { display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; max-width: 100%; margin: 0 auto; }
   .avatar {
     width: 115px; height: 115px; border-radius: 50%;
-    border: 2px solid white; overflow: hidden;
+    border: 2px solid white;
     background: white;
     padding: 2px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -453,14 +453,45 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
     z-index: 1;
+    cursor: pointer;
   }
   .avatar:hover {
     transform: scale(1.15);
     box-shadow: 0 8px 24px rgba(0,0,0,0.2);
-    z-index: 2;
+    z-index: 10;
   }
   .avatar img {
     width: 100%; height: 100%; object-fit: cover; object-position: center 25%; border-radius: 50%;
+  }
+  .avatar-text-svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-10deg);
+    width: 170px;
+    height: 170px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    z-index: 2;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+  }
+  .avatar:hover .avatar-text-svg {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  .avatar-name {
+    fill: var(--dark);
+    font-family: 'DM Serif Display', serif;
+    font-size: 15px;
+    letter-spacing: 0;
+  }
+  .avatar-role {
+    fill: var(--teal);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0;
   }
   .cta-box {
     background: var(--dark); border-radius: var(--radius);

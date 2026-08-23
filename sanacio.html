@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanació – Bmind</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .service-hero-img {
+      width: 100%;
+      height: 450px;
+      object-fit: cover;
+      border-radius: var(--radius);
+      margin-bottom: 3rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    }
+    .service-detail {
+      max-width: 800px;
+      margin: 120px auto 80px;
+      padding: 0 20px;
+    }
+    .service-detail h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 2.5rem;
+      color: var(--dark);
+      margin-bottom: 1.5rem;
+      text-align: center;
+      line-height: 1.3;
+    }
+    .service-detail p {
+      font-size: 1.05rem;
+      color: var(--text);
+      line-height: 1.7;
+      margin-bottom: 1.2rem;
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 16px;
+      margin-top: 1.5rem;
+      margin-bottom: 2.5rem;
+      padding: 0;
+      list-style: none;
+    }
+    .features-grid li {
+      background: #ffffff;
+      border: 1px solid var(--cream);
+      padding: 16px 20px;
+      border-radius: var(--radius-sm);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+      font-size: 0.95rem;
+      color: var(--dark);
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 0;
+      transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+    }
+    .features-grid li:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+      border-color: var(--teal-light);
+    }
+    .features-grid li::before {
+      content: '✓';
+      color: var(--teal);
+      font-weight: bold;
+      margin-right: 12px;
+      font-size: 1.1rem;
+      line-height: 1.2;
+    }
+
+    @media (max-width: 768px) {
+      .service-hero-img { height: 250px; }
+      .service-detail h1 { font-size: 2rem; }
+      .features-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RXYBE85Y4N"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-RXYBE85Y4N');
+  </script>
+</head>
+
+<body>
+
+  <nav>
+    <a href="index.html" class="logo">
+      <img src="images/bmind-logo.png" alt="Bmind" style="height: 60px; width: auto;">
+      <div class="logo-text">
+        <span class="logo-line1">CENTRE DE DIAGNÒSTIC I ATENCIÓ</span>
+        <span class="logo-line2">PSICOLÒGICA I PSIQUIÀTRICA</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Inici</a></li>
+      <li><a href="index.html#services" class="active">Serveis</a></li>
+      <li><a href="equip.html">Equip</a></li>
+      <li><a href="index.html#collaborations">Col·laboracions</a></li>
+      <li><a href="index.html#contact">Contacte</a></li>
+    </ul>
+
+    <a href="index.html#contact" class="nav-cta">Demana visita →</a>
+  </nav>
+
+    <section class="service-detail fade-up">
+    
+    
+    
+    
+    <h1>Sanació</h1>
+
+    
+    <p>Sanació és un espai d’acompanyament orientat a afavorir la connexió amb un mateix, l’escolta interior i el desenvolupament personal. Parteix d’una mirada integral de la persona, tenint en compte no només aspectes emocionals, cognitius i físics, sinó també la dimensió més profunda relacionada amb el sentit, els valors, la consciència i el benestar interior.</p>
+    
+    <p>Les sessions de sanació espiritual poden ser especialment útils en moments de canvi, crisi personal, cerca de sentit, bloqueig emocional o simplement com un espai de creixement i cura personal.</p>
+    
+    <p>A través d’un acompanyament respectuós i personalitzat, promovem una major connexió amb un mateix, facilitant processos de transformació, benestar i desenvolupament personal.</p>
+    
+    <p style="margin-top: 2.5rem; font-weight: 500; color: var(--dark);">Serveis oferts:</p>
+    
+    <ul class="features-grid">
+      <li>Reiki i treball energètic</li>
+      <li>Harmonització i equilibratge energètic</li>
+      <li>Meditació guiada i visualitzacions</li>
+      <li>Exercicis de respiració conscient</li>
+    </ul>
+    <p style="margin-top: 3.5rem; font-weight: 500; color: var(--dark);">A càrrec de:</p>
+    <div class="services-grid" style="display: flex; justify-content: center; margin-top: 1.5rem; margin-bottom: 2rem;">
+      <div class="service-card" style="max-width: 350px; cursor: pointer;" onclick="openIsabelModal()">
+        <div class="service-card-img">
+          <img src="images/Equip_3.jpg" alt="Isabel Pallisera" style="object-position: center 25%;">
+        </div>
+        <div class="service-card-body">
+          <h3>Isabel Pallisera</h3>
+          <div class="card-description">
+            <p>Em dic Isabel Pallisera, des que era una infant, la necessitat de moviment, la creativitat i l'experimentació amb el medi que m'envolta ha sigut el meu pilar per a sentir-me bé amb mi mateixa i també és la meva font en la recerca de benestar emocional, mental i físic.</p><p>En el meu camí de vida l'activitat física és rellevant i s'ha convertit en la meva professió: mestra d'educació física, psicomotricista (vessant d'Aucouturier), llicenciada en CAiFE en l'itinerari de la salut i mestra de Hatha Ioga. Amb el ioga se'm va obrir la porta a les meditacions guiades, al cant de mantras i a la dansa. Aquest sentir més interior em va encendre una espurna de comprensió sobre el que realment pot arribar a ser l'ésser humà (consciència global) i vaig voler aprendre molt més a través de diferents tècniques i teràpies: Flors de Bach, Hermètics, Metafísica...</p><p>Sent una aprenent incansable de tot el que implica crear una major consciència d'una mateixa i del món que ens envolta, vaig a estudiar Constel·lacions Familiars i Pedagogia Sistèmica, convertint-me així en Terapeuta multidimensional en Pedagogia Sistèmica i mestra de Reiki Usui Japonès i de Reiki Karuna.<br>Poc a poc, he anat creant el mètode de sanació acord amb la meva essència i acord amb el meu sentir i acompanyar als altres i compartir tot allò que els pot ser útil per tenir una major consciència del seu benestar físic, emocional i mental em gratifica i em regala molta pau.</p><p>Per acabar, vull dir que sóc Wiccana i celebro cada un dels sàbats de l'any realitzant rituals naturals en els quals es pot recollir l'energia que emana i ser utilitzada pel propi bé i pel bé de l'Univers. Amb una amiga estem escrivint contes per a infants i adults per a comprendre - a través d'historietes- cada moment energètic.</p>
+          </div>
+          <a class="saber-mes" onclick="openIsabelModal()" style="cursor: pointer;">Llegir més</a>
+        </div>
+      </div>
+    </div>
+
+    
+  </section>
+
+  <footer>
+    <div class="footer-logo">
+      <img src="images/bmind-logo.png" alt="Bmind" style="height: 60px; width: auto;">
+    </div>
+    <ul class="footer-nav">
+      <li><a href="index.html">Inici</a></li>
+      <li><a href="index.html#services">Serveis</a></li>
+      <li><a href="equip.html">Equip</a></li>
+      <li><a href="index.html#collaborations">Col·laboracions</a></li>
+      <li><a href="index.html#contact">Contacte</a></li>
+    </ul>
+    <ul class="footer-links">
+      <li><a href="avis-legal.html">Avís legal</a></li>
+      <li><a href="politica-de-privacitat.html">Política de privacitat</a></li>
+      <li><a href="#">Política de cookies</a></li>
+    </ul>
+    <span class="footer-copy">© 2024 Bmind · Tots els drets reservats</span>
+  </footer>
+
+  <script>
+    // Intersection Observer per animacions de fade-up
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+    
+    // Mostrem directament per evitar que quedi blanc si el scroll no l'activa
+    setTimeout(() => {
+        document.querySelectorAll('.fade-up').forEach(el => {
+            if (el.getBoundingClientRect().top < window.innerHeight) {
+                el.classList.add('visible');
+            }
+        });
+    }, 100);
+  </script>
+
+  <!-- Modal Equip -->
+  <div id="team-modal" class="modal-overlay">
+    <div class="modal-content">
+      <span class="modal-close" onclick="closeModal()">&times;</span>
+      <div class="modal-body">
+        <div class="modal-img-container">
+          <img id="modal-image" src="" alt="">
+        </div>
+        <div class="modal-text">
+          <h3 id="modal-name"></h3>
+          <div id="modal-description"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openIsabelModal() {
+      const name = "Isabel Pallisera";
+      const imgSrc = "images/Equip_3.jpg";
+      const descHTML = `<p>Em dic Isabel Pallisera, des que era una infant, la necessitat de moviment, la creativitat i l'experimentació amb el medi que m'envolta ha sigut el meu pilar per a sentir-me bé amb mi mateixa i també és la meva font en la recerca de benestar emocional, mental i físic.</p><p>En el meu camí de vida l'activitat física és rellevant i s'ha convertit en la meva professió: mestra d'educació física, psicomotricista (vessant d'Aucouturier), llicenciada en CAiFE en l'itinerari de la salut i mestra de Hatha Ioga. Amb el ioga se'm va obrir la porta a les meditacions guiades, al cant de mantras i a la dansa. Aquest sentir més interior em va encendre una espurna de comprensió sobre el que realment pot arribar a ser l'ésser humà (consciència global) i vaig voler aprendre molt més a través de diferents tècniques i teràpies: Flors de Bach, Hermètics, Metafísica...</p><p>Sent una aprenent incansable de tot el que implica crear una major consciència d'una mateixa i del món que ens envolta, vaig a estudiar Constel·lacions Familiars i Pedagogia Sistèmica, convertint-me així en Terapeuta multidimensional en Pedagogia Sistèmica i mestra de Reiki Usui Japonès i de Reiki Karuna.<br>Poc a poc, he anat creant el mètode de sanació acord amb la meva essència i acord amb el meu sentir i acompanyar als altres i compartir tot allò que els pot ser útil per tenir una major consciència del seu benestar físic, emocional i mental em gratifica i em regala molta pau.</p><p>Per acabar, vull dir que sóc Wiccana i celebro cada un dels sàbats de l'any realitzant rituals naturals en els quals es pot recollir l'energia que emana i ser utilitzada pel propi bé i pel bé de l'Univers. Amb una amiga estem escrivint contes per a infants i adults per a comprendre - a través d'historietes- cada moment energètic.</p>`;
+
+      document.getElementById('modal-name').textContent = name;
+      document.getElementById('modal-image').src = imgSrc;
+      document.getElementById('modal-image').alt = name;
+      document.getElementById('modal-description').innerHTML = descHTML;
+
+      const modal = document.getElementById('team-modal');
+      modal.style.display = 'flex';
+      setTimeout(() => {
+        modal.classList.add('active');
+      }, 10);
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('team-modal');
+      modal.classList.remove('active');
+      setTimeout(() => {
+        modal.style.display = 'none';
+      }, 300); // Wait for transition
+      document.body.style.overflow = 'auto';
+    }
+
+    // Tancar modal clicant a fora
+    window.onclick = function(event) {
+      const modal = document.getElementById('team-modal');
+      if (event.target === modal) {
+        closeModal();
+      }
+    }
+  </script>
+</body>
+</html>
