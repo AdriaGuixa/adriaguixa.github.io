@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gràcies – Bmind</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .gracies-container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+    .gracies-container h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 3rem;
+      color: var(--dark);
+      margin-bottom: 20px;
+    }
+    .gracies-container p {
+      font-size: 1.2rem;
+      color: var(--text);
+      margin-bottom: 30px;
+      max-width: 600px;
+    }
+    .btn-tornar {
+      display: inline-block;
+      padding: 12px 30px;
+      background-color: var(--teal);
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .btn-tornar:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="logo">
+      <img src="images/transparent-image-2.png" alt="Bmind" style="height: 60px; width: auto;">
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Inici</a></li>
+      <li><a href="index.html#services">Serveis</a></li>
+      <li><a href="equip.html">Equip</a></li>
+      <li><a href="index.html#collaborations">Col·laboracions</a></li>
+      <li><a href="index.html#contact">Contacte</a></li>
+    </ul>
+    <a href="index.html#contact" class="nav-cta">Demana visita →</a>
+  </nav>
+
+  <div class="gracies-container">
+    <h1>Gràcies pel teu missatge</h1>
+    <p>Hem rebut correctament la teva consulta. Ens posarem en contacte amb tu al més aviat possible per ajudar-te i resoldre qualsevol dubte.</p>
+    <a href="index.html" class="btn-tornar">Tornar a l'Inici</a>
+  </div>
+
+</body>
+</html>
